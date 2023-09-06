@@ -1,0 +1,13 @@
+
+with open('file1.txt', 'r') as readfile:
+    with open('file2.txt', 'w') as writefile:
+        odd = True
+        for line in readfile:
+            if odd == True:
+                writefile.write(line)
+                odd = False
+            else:
+                odd = True
+                
+print("succcessfully copied")
+        

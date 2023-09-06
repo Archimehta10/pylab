@@ -1,0 +1,16 @@
+import random
+def cardinfo():
+    cards = ['Spade', 'Diamond', 'Club', 'Heart']
+    values = ['Ace', 2, 3, 4, 5,6 ,7, 8,9, 10, 'Jack', 'Queen', 'King']
+    deck = [(card, value) for card in cards for value in values]
+    
+    random.shuffle(deck)
+    
+    selected_card = random.choice(deck)
+    print("The selected card :" ,selected_card);
+    
+    sample_set = random.sample(deck,k=2)
+    print("sample set:", sample_set)
+
+cardinfo()
+    

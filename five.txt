@@ -1,0 +1,10 @@
+count = 0
+while(1):
+    st = input("Enter a string (0 to stop)")
+    if st =='0':
+        break
+    else: 
+        if(len(st)>=2 and st[0]==st[-1]):
+            count+=1
+            
+print("The number of words: ", count)

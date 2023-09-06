@@ -1,0 +1,16 @@
+x=int(input('enter the operand 1:'))
+y=int(input('enter the operand 2:'))
+op=str(input('enter operator:'))
+print("simple calculator operation")
+if op=='+':
+    print('x+y=',x+y)
+elif op=='-':
+    print('x-y=',x-y)
+elif op=='*':
+    print('x*y=',x*y)
+elif op=='/':
+    print('x/y=',x/y)
+elif op=='%':
+    print('x%y=',x%y)
+else:
+    print('invalid operator')

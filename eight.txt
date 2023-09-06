@@ -1,0 +1,16 @@
+def one():
+    farehniet = float(input("Enter the temperature in farehniet:"))
+    celsius = (farehniet-32)*5/9
+    print("The temperature is: ", celsius, "celsius")
+
+def two():
+    celsius = float(input("Enter the temperature in celsius:"))
+    farehniet = (celsius*9/5)+32
+    print("The temperature is: ", farehniet, "farehniet")
+
+
+
+import main  
+main.one()
+main.two()
+

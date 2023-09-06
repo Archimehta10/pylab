@@ -1,0 +1,10 @@
+def sentencer(sentence):
+    word = sentence.slpit()
+    s = set(word)
+    l = list(s)
+    l.sort()
+    new = ''.join(l)
+    print(new)
+
+x = input("Enter the string:")
+sentencer(x)

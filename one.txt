@@ -1,0 +1,13 @@
+def lettermove(st):
+    index = 0
+    new = ""
+    alphabets = "abcdefghijklmnopqrstuvwxyza"
+    for i in st.lower():
+        if st.islower():
+            index = alphabets.index(i) + 1
+            new += alphabets[index]
+        else:
+            index += alphabets[i]
+            
+    return new
+print(lettermove(input("Enter 4 characters:")))
