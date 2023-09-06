@@ -1,0 +1,26 @@
+def str_length(s):
+    if len(s) == 0:
+        return 0
+    else:
+        # Recursively call the function with the substring starting from the second character
+        return 1 + str_length(s[1:])
+
+x = input("Enter a string: ")
+r = str_length(x)
+print("Length of string:", r)
+
+
+
+def minimum(lst):
+    if (len(lst)==1):
+        return lst[0]
+    else:
+        return min((lst[0]),minimum(lst[1:]))
+
+l=[]
+n=input("Enter the number of items in the list: ")
+for i in range(n):
+    word=(input(f"Enter the element {i+1}: "))
+    l.append(word)
+sm=minimum(l)
+print("Minimum element:",sm)
