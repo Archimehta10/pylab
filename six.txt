@@ -1,10 +1,9 @@
-def sentencer(sentence):
-    word = sentence.slpit()
-    s = set(word)
-    l = list(s)
-    l.sort()
-    new = ''.join(l)
-    print(new)
-
-x = input("Enter the string:")
-sentencer(x)
+import re
+s=input("Enter the string:")
+words=s.split(" ")
+Set=set()
+for i in words:
+    Set.add(i)
+lst=list(Set)
+lst.sort(key=lambda x:(x.isdigit(),x.lower()))
+print(lst)
